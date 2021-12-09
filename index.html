@@ -34,17 +34,29 @@
             <div class="title">
                 <h2>Projects</h2>
             </div>
-            <div class="project" id="click">
-                <p class="projectName">Random Quote Against Humanity - Click Here</p>
-                <button onclick="getElementById('click').innerHTML = randomBlackCard()">Click Here</button>
+            <div class="project" id="project2div" onmouseover="project2()" onmouseleave="project2Reset();">
+                <h3 class="projectName">Random Quote Against Humanity</h3>
+                <button onClick="randomQuote();">Click Here</button>
+                <p id="click"></p>                    
             </div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-        </article>
+            <div class="project" onmouseover="project1()" onmouseleave="project1Reset();" id="project1div">
+                <h3 class="projectName">Excursion</h3>
+                <p id="project1"></p>
+                <img id="myImg" src="img/project1.png" alt="website" style="width:100%;max-width:300px">
 
+            </div>  
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                 <img class="modal-content" id="img01">
+                <div id="caption"></div>
+
+            </div>
+            <div class="project"><h3 class="projectName">Coming Soon</h3></div>
+            <div class="project"><h3 class="projectName">Coming Soon</h3></div>
+            <div class="project"><h3 class="projectName">Coming Soon</h3></div>
+            <div class="project"><h3 class="projectName">Coming Soon</h3></div>
+        </article>
+    
 
         <article id="About">
             <div class="title">
